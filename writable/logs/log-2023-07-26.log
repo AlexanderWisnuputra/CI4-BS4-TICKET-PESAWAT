@@ -1,0 +1,154 @@
+ERROR - 2023-07-26 01:53:53 --> mysqli_sql_exception: Table 'airline.pemesanan' doesn't exist in C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\app\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\app\Controllers\Product.php(29): App\Models\Modelproduct->simpan(Array)
+#6 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+#7 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-07-26 01:53:53 --> Table 'airline.pemesanan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'a\', \'a\', \'a\', \'20000\', \'2023-07-11\', \'a\', \'a\', \'a\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'a\', \'a\', \'a\', \'20000\', \'2023-07-11\', \'a\', \'a\', \'a\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'a\', \'a\', \'a\', \'20000\', \'2023-07-11\', \'a\', \'a\', \'a\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (:nama:, :nik:, :hp:, :wisata:, :tanggal:, :dewasa:, :anak:, :total:)', [...], false)
+ 5 APPPATH\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(29): App\Models\Modelproduct->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 01:54:10 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\app\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\app\Controllers\Product.php(29): App\Models\Modelproduct->simpan(Array)
+#6 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+#7 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-07-26 01:54:10 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'a\', \'a\', \'a\', \'20000\', \'2023-07-11\', \'a\', \'a\', \'a\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'a\', \'a\', \'a\', \'20000\', \'2023-07-11\', \'a\', \'a\', \'a\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'a\', \'a\', \'a\', \'20000\', \'2023-07-11\', \'a\', \'a\', \'a\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (:nama:, :nik:, :hp:, :wisata:, :tanggal:, :dewasa:, :anak:, :total:)', [...], false)
+ 5 APPPATH\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(29): App\Models\Modelproduct->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 02:06:32 --> Undefined variable $production_code
+in APPPATH\Views\viewformedit.php on line 17.
+ 1 APPPATH\Views\viewformedit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $production_code', 'APPPATH\\Views\\viewformedit.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewformedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('viewformedit', [], true)
+ 5 APPPATH\Controllers\Product.php(63): view('viewformedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->formedit()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 02:08:35 --> Undefined variable $production_code
+in APPPATH\Views\viewformedit.php on line 17.
+ 1 APPPATH\Views\viewformedit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $production_code', 'APPPATH\\Views\\viewformedit.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewformedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('viewformedit', [], true)
+ 5 APPPATH\Controllers\Product.php(63): view('viewformedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->formedit()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 02:37:34 --> Undefined variable $production_code
+in APPPATH\Views\viewformedit.php on line 17.
+ 1 APPPATH\Views\viewformedit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $production_code', 'APPPATH\\Views\\viewformedit.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewformedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('viewformedit', [], true)
+ 5 APPPATH\Controllers\Product.php(63): view('viewformedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->formedit()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 02:37:52 --> Undefined variable $stock
+in APPPATH\Views\viewformedit.php on line 34.
+ 1 APPPATH\Views\viewformedit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stock', 'APPPATH\\Views\\viewformedit.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewformedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('viewformedit', [], true)
+ 5 APPPATH\Controllers\Product.php(63): view('viewformedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->formedit()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 02:37:56 --> Undefined variable $stock
+in APPPATH\Views\viewformedit.php on line 34.
+ 1 APPPATH\Views\viewformedit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stock', 'APPPATH\\Views\\viewformedit.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewformedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('viewformedit', [], true)
+ 5 APPPATH\Controllers\Product.php(63): view('viewformedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->formedit()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 04:43:59 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'airline', 3306, '', 0)
+#1 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\app\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\app\Controllers\Product.php(29): App\Models\Modelproduct->simpan(Array)
+#6 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+#7 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#3 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\app\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\app\Controllers\Product.php(29): App\Models\Modelproduct->simpan(Array)
+#5 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+#6 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CI4-Pemesanan-Tiket-main\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-07-26 04:43:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (:nama:, :nik:, :hp:, :wisata:, :tanggal:, :dewasa:, :anak:, :total:)', [...], false)
+ 3 APPPATH\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Product.php(29): App\Models\Modelproduct->simpan([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

@@ -1,0 +1,93 @@
+ERROR - 2023-01-07 00:01:56 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\ci4\app\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Product.php(29): App\Models\Modelproduct->simpan(Array)
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-07 00:01:56 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (:nama:, :nik:, :hp:, :wisata:, :tanggal:, :dewasa:, :anak:, :total:)', [...], false)
+ 5 APPPATH\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(29): App\Models\Modelproduct->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-07 00:09:48 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\ci4\app\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Product.php(29): App\Models\Modelproduct->simpan(Array)
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-07 00:09:48 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (:nama:, :nik:, :hp:, :wisata:, :tanggal:, :dewasa:, :anak:, :total:)', [...], false)
+ 5 APPPATH\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(29): App\Models\Modelproduct->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-07 01:04:45 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'PRIMARY' in C:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\ci4\app\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Product.php(29): App\Models\Modelproduct->simpan(Array)
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-07 01:04:45 --> Duplicate entry '2147483647' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'Alexander Wisnuputra\', \'3172000011111111\', \'08561706108\', \'10000\', \'2023-01-08\', \'1\', \'2\', \'20000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'Alexander Wisnuputra\', \'3172000011111111\', \'08561706108\', \'10000\', \'2023-01-08\', \'1\', \'2\', \'20000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (\'Alexander Wisnuputra\', \'3172000011111111\', \'08561706108\', \'10000\', \'2023-01-08\', \'1\', \'2\', \'20000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pemesanan` (`nama`, `nik`, `hp`, `wisata`, `tanggal`, `dewasa`, `anak`, `total`) VALUES (:nama:, :nik:, :hp:, :wisata:, :tanggal:, :dewasa:, :anak:, :total:)', [...], false)
+ 5 APPPATH\Models\Modelproduct.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(29): App\Models\Modelproduct->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->simpandata()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 01:08:07 --> Undefined variable $production_code
+in APPPATH\Views\viewformedit.php on line 17.
+ 1 APPPATH\Views\viewformedit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $production_code', 'APPPATH\\Views\\viewformedit.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewformedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('viewformedit', [], true)
+ 5 APPPATH\Controllers\Product.php(63): view('viewformedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->formedit()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
